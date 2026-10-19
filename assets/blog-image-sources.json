@@ -1,0 +1,44 @@
+[
+  {
+    "file": "blog-mosque.jpg",
+    "source": "https://images.unsplash.com/photo-1577561426384-62154a1e9457?auto=format&fit=crop&w=1400&q=85",
+    "description": "Cambridge Central Mosque timber interior",
+    "photographer": "Rumman Amin",
+    "page": "https://unsplash.com/photos/mosque-interior-sMB8l9j1PQ8"
+  },
+  {
+    "file": "blog-quran.jpg",
+    "source": "https://images.unsplash.com/photo-1616422840391-fa670d4b2ae7?auto=format&fit=crop&w=1400&q=85",
+    "description": "Open Quran and prayer beads on green fabric",
+    "photographer": "Ali Burhan",
+    "page": "https://unsplash.com/photos/quran-with-prayer-beads-on-green-2HgHr60mWVo"
+  },
+  {
+    "file": "blog-quran-stand.jpg",
+    "source": "https://images.unsplash.com/photo-1728294087366-d57768c7e0ec?auto=format&fit=crop&w=1400&q=85",
+    "description": "Closed Quran on wooden stand and green prayer mat",
+    "photographer": "Defrino Maasy",
+    "page": "https://unsplash.com/photos/an-open-book-sitting-on-top-of-a-wooden-stand-k79CK0QSyHE"
+  },
+  {
+    "file": "blog-mosque-light.jpg",
+    "source": "https://images.unsplash.com/photo-1772436833817-378674451493?auto=format&fit=crop&w=1400&q=85",
+    "description": "Dark mosque interior with stained-glass windows",
+    "photographer": "Eugeniya Belova",
+    "page": "https://unsplash.com/photos/interior-of-a-mosque-with-stained-glass-windows-UG5ue7KDL7c"
+  },
+  {
+    "file": "blog-forest.jpg",
+    "source": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1400&q=85",
+    "description": "Sunlight through green forest",
+    "photographer": null,
+    "page": null
+  },
+  {
+    "file": "blog-mountains.jpg",
+    "source": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1400&q=85",
+    "description": "Mountain valley with green forest",
+    "photographer": null,
+    "page": null
+  }
+]
