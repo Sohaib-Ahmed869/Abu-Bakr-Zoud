@@ -63,12 +63,12 @@ $$('[data-article]').forEach(link=>link.addEventListener('click',event=>{
  const source=document.createElement('p');source.className='source';source.textContent="Qur'an, "+article.reference+". Editorial preview pending review; not attributed to the Shaykh.";
  $('#article-body').replaceChildren(photo,ar,...nodes,source);showDialog('#article-dialog',link);
 }));
-$('#contact-form').addEventListener('input',()=>{$('#enquiry-draft').hidden=true;$('#copy-enquiry').hidden=true;$('#contact-status').textContent='';});
-$('#contact-form').addEventListener('submit',e=>{
+$('#contact-form')?.addEventListener('input',()=>{$('#enquiry-draft').hidden=true;$('#copy-enquiry').hidden=true;$('#contact-status').textContent='';});
+$('#contact-form')?.addEventListener('submit',e=>{
  e.preventDefault();const data=new FormData(e.currentTarget);const draft=`Enquiry: ${data.get('type')}\nName: ${data.get('name')}\nEmail: ${data.get('email')}\nOrganisation: ${data.get('organisation')||'Not specified'}\nLocation: ${data.get('city')||'Not specified'}\n\n${data.get('message')}`;
  $('#contact-status').textContent='Your enquiry preview is below. Nothing has been sent.';$('#enquiry-draft').textContent=draft;$('#enquiry-draft').hidden=false;$('#copy-enquiry').hidden=false;
 });
-$('#copy-enquiry').addEventListener('click',async()=>{try{await navigator.clipboard.writeText($('#enquiry-draft').textContent);$('#contact-status').textContent='Enquiry copied. Nothing has been sent.';}catch{$('#contact-status').textContent='Select the preview text below to copy it manually.';}});
+$('#copy-enquiry')?.addEventListener('click',async()=>{try{await navigator.clipboard.writeText($('#enquiry-draft').textContent);$('#contact-status').textContent='Enquiry copied. Nothing has been sent.';}catch{$('#contact-status').textContent='Select the preview text below to copy it manually.';}});
 if('IntersectionObserver' in window&&!matchMedia('(prefers-reduced-motion: reduce)').matches){
  const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('reveal');observer.unobserve(entry.target);}}),{threshold:.08});
  $$('.section-heading,.about-copy,.quote-band h2,.listen-copy,.connect-top').forEach(el=>observer.observe(el));
