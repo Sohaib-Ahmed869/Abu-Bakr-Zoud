@@ -1,0 +1,108 @@
+/* Navy theme layer: rounded cards, pill labels and glow backgrounds, in the style of Bayyinah TV. */
+:root{--radius:14px;--radius-lg:20px;--image-radius:12px;--photo-treatment:saturate(.78) contrast(1.02);--glow:radial-gradient(60% 70% at 85% 10%,#2f46b455,transparent 70%)}
+body{background:var(--cream)}
+::selection{background:#2f46b4;color:#fff}
+
+/* Header */
+.header{backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+.header nav{gap:6px}
+.header nav a{padding:8px 14px;border-radius:8px;font-size:13px;transition:background .2s,color .2s}
+.header nav a:after{display:none}
+.header nav a:hover{background:#ffffff12}
+.header nav a[aria-current="page"]{background:#ffffff1a}
+.header .button.light{border-color:var(--accent);background:var(--accent);color:#fff}
+.header .button.light:hover{background:var(--accent-hover)}
+@media(min-width:1101px){.mobile-booking{display:none!important}}
+
+/* Buttons and links */
+.button{border-radius:10px;letter-spacing:.01em}
+.button.cream,.button.green{box-shadow:0 8px 24px #2f46b440}
+.button.green:hover{background:var(--accent-hover)}
+.button.light{border-radius:10px}
+.quiet-link{border:1px solid #8ea6ff66;border-radius:10px;padding:14px 18px}
+.quiet-link:hover{background:#ffffff0d}
+.text-link{color:var(--ink)}
+.text-link:hover{color:var(--accent-soft)}
+
+/* Pill label above headings */
+.pill{display:inline-flex;align-items:center;gap:8px;padding:6px 14px;margin-bottom:20px;border:1px solid #8ea6ff66;border-radius:999px;background:#2f46b41f;color:#c9d3f5;font:500 12px/1.4 var(--sans);letter-spacing:.01em}
+.pill:before{content:'';width:6px;height:6px;border-radius:50%;background:var(--accent-soft)}
+.section-heading h2 em,.journal-heading h2 em,.connect-top h2 em,.about-copy h2 em,.listen-copy h2 em{color:var(--accent-soft)}
+
+/* Hero glow, like the navy stage lighting on shabubakrzoud.com */
+.hero{background:radial-gradient(55% 80% at 78% 40%,#2f46b466,transparent 70%),radial-gradient(40% 50% at 0% 100%,#1b2a8a55,transparent 70%),var(--navy)}
+.hero h1 em{color:var(--accent-soft)}
+.portrait-frame{border-radius:var(--radius-lg);box-shadow:0 30px 80px #00000066,0 0 0 1px #ffffff14}
+.hero-bottom{border-top-color:#ffffff14}
+
+/* Pathways as cards */
+.pathways{padding:28px 0;background:var(--cream)}
+.pathway-grid{gap:18px}
+.pathway-grid>a,.pathway-grid>a:first-child,.pathway-grid>a:last-child{padding:24px 26px;border:1px solid #ffffff14;border-radius:var(--radius);background:var(--surface)}
+.pathway-grid>a:hover{background:var(--surface-2);border-color:#8ea6ff55}
+
+/* Sections: alternate deep and slightly lifted navy */
+.journal-home,.series,.connect{background:var(--cream)}
+.lectures{background:radial-gradient(50% 60% at 100% 0%,#2f46b422,transparent 70%),#0a0e2a}
+.listen,.about{background:#0a0e2a}
+.journal-home,.lectures,.series{border-bottom:1px solid #ffffff0d}
+
+/* Article cards */
+.story-card{background:var(--surface);border:1px solid #ffffff12;border-radius:var(--radius);overflow:hidden;transition:border-color .3s,transform .3s}
+.story-card:hover{border-color:#8ea6ff55;transform:translateY(-3px)}
+.story-card .story-copy{padding:4px 22px 20px;display:flex;flex-direction:column;flex:1}
+.story-image{border-radius:0}
+.journal-magazine .story-lead{border-radius:var(--radius)}
+.journal-magazine .story-lead .story-copy{padding:12px 30px 26px}
+.story-read{border-top-color:#ffffff14}
+.image-arrow{border-radius:50%}
+
+/* Lecture library */
+.filter,.blog-filter{border-radius:999px}
+.video-image{border-radius:var(--image-radius)}
+.video-play{border-radius:50%}
+.library-search{border-radius:999px}
+
+/* Series cards */
+.series-card{border-radius:var(--radius-lg)}
+.series-card:hover{border-color:#8ea6ff66}
+.series-top>span:first-child{border-radius:999px}
+
+/* About */
+.about-photo{border-radius:var(--radius-lg)}
+.about-photo img{filter:saturate(.85)}
+.about-note{border-radius:var(--radius)}
+
+/* Listen */
+.audio-visual{border-radius:var(--radius-lg);overflow:hidden}
+
+/* Social + community as cards */
+.social-grid{gap:16px;border:0}
+.social-grid>a,.social-grid>a:first-child,.social-grid>a:last-child{padding:22px;border:1px solid #ffffff14;border-radius:var(--radius);background:var(--surface);transition:border-color .2s,background .2s}
+.social-grid>a:hover{border-color:#8ea6ff55;background:var(--surface-2)}
+.social-icon{color:var(--accent-soft)}
+.community-grid{gap:16px}
+.community-grid>div,.community-grid>div+div{padding:34px;border:1px solid #ffffff14;border-radius:var(--radius-lg);background:var(--surface)}
+
+/* Booking call to action as a glowing panel */
+.booking-banner{background:var(--cream);padding:30px 0 90px}
+.booking-banner:before{display:none}
+.booking-banner .container{padding:56px;border-radius:24px;border:1px solid #8ea6ff33;background:radial-gradient(70% 120% at 100% 0%,#2f46b4aa,transparent 70%),linear-gradient(120deg,#151c47,#0b0f33);overflow:hidden}
+
+/* Inner pages */
+.page-intro,.blog-intro,.article-intro{background:radial-gradient(50% 90% at 85% 0%,#2f46b455,transparent 70%),var(--navy);border-bottom-color:#ffffff12}
+.article-hero,.contact-form-panel,.editorial-banner,.article-end{border-radius:var(--radius-lg);overflow:hidden}
+.contact-form-panel input,.contact-form-panel select,.contact-form-panel textarea,dialog input,dialog textarea,dialog select{border-radius:10px}
+dialog{border-radius:var(--radius-lg)}
+.qa-mine{border-radius:var(--radius)}
+
+@media(max-width:850px){
+  .pathway-grid,.social-grid{gap:12px}
+  .pathway-grid>a,.pathway-grid>a:first-child,.pathway-grid>a:last-child,.social-grid>a,.social-grid>a:first-child,.social-grid>a:last-child{border:1px solid #ffffff14}
+  .community-grid>div+div{border-left:1px solid #ffffff14}
+  .booking-banner .container{padding:38px 28px}
+}
+@media(max-width:580px){
+  .community-grid>div,.community-grid>div+div{padding:26px}
+  .booking-banner .container{padding:32px 22px}
+}
