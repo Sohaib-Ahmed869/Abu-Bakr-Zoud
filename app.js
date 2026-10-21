@@ -42,6 +42,7 @@ $$('dialog').forEach(dialog=>{
 });
 $$('.contact-toggle').forEach(b=>b.addEventListener('click',()=>showDialog('#contact-dialog',b)));
 $$('.privacy-toggle').forEach(b=>b.addEventListener('click',()=>showDialog('#privacy-dialog',b)));
+$$('.signin-toggle').forEach(b=>b.addEventListener('click',e=>{e.preventDefault();showDialog('#signin-dialog',b);}));
 function normaliseSearch(text){return text.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f'’‘]/g,'').trim();}
 function searchVideos(){
  const term=normaliseSearch($('#search-input').value);const matches=videos.filter(v=>normaliseSearch(v.title+' '+v.keywords+' '+v.subtitle).includes(term));
