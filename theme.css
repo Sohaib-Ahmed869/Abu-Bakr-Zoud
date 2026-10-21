@@ -1,4 +1,4 @@
-/* Navy theme layer: rounded cards, pill labels and glow backgrounds, in the style of Bayyinah TV. */
+/* Navy theme layer: rounded cards and glow backgrounds, in the style of Bayyinah TV. */
 :root{--radius:14px;--radius-lg:20px;--image-radius:12px;--photo-treatment:saturate(.78) contrast(1.02);--glow:radial-gradient(60% 70% at 85% 10%,#2f46b455,transparent 70%)}
 body{background:var(--cream)}
 ::selection{background:#2f46b4;color:#fff}
@@ -34,9 +34,6 @@ body{background:var(--cream)}
 .text-link{color:var(--ink)}
 .text-link:hover{color:var(--accent-soft)}
 
-/* Pill label above headings */
-.pill{display:inline-flex;align-items:center;gap:8px;padding:6px 14px;margin-bottom:20px;border:1px solid #8ea6ff66;border-radius:999px;background:#2f46b41f;color:#c9d3f5;font:500 12px/1.4 var(--sans);letter-spacing:.01em}
-.pill:before{content:'';width:6px;height:6px;border-radius:50%;background:var(--accent-soft)}
 .section-heading h2 em,.journal-heading h2 em,.connect-top h2 em,.about-copy h2 em,.listen-copy h2 em{color:var(--accent-soft)}
 
 /* Hero glow, like the navy stage lighting on shabubakrzoud.com */
